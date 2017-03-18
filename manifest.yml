@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: WCH Integrations
+  host: wch-integrations
+  disk_quota: 1024M
+  services:
+  - WCH Integrations-cloudantNoSQLDB
+  env:
+    NODE_RED_USERNAME: nodered
+    NODE_RED_PASSWORD: c1tyc00l
